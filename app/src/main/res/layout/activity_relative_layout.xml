@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_1"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/relative_textView1"
+            android:text="@string/login"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="165dp"
+        android:layout_below="@+id/relative_layout_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="@string/name"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/password"
+            android:hint="@string/password"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/login"
+            android:text="@string/login"
+            android:textSize="18sp"
+            android:textColor="@color/colorLogin"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="10dp"
+            android:minWidth="100dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignRight="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/registered"
+            android:text="@string/registered"
+            android:textSize="18sp"
+            android:textColor="@color/colorRegistered"
+            android:clickable="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@id/password"
+            android:layout_toLeftOf="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:id="@+id/table_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/table_layout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/table_textView1"
+            android:text="@string/login"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            />
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_layout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table_layout_3"
+            android:layout_weight="1"
+            android:minHeight="165dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/Row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/name"
+                    android:hint="@string/name"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/password"
+                    android:hint="@string/password"
+                    android:singleLine="true"
+                    android:password="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/Row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:minWidth="100dp">
+
+                <TextView
+                    android:id="@+id/table_textView2"
+                    android:text="@string/registered"
+                    android:textColor="@color/colorRegistered"
+                    android:textSize="18sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_vertical"
+                    android:layout_weight="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    />
+                <Button
+                    android:id="@+id/login"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/login"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorLogin"
+                    android:layout_weight="1"
+                    android:minWidth="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+
+</TableLayout>

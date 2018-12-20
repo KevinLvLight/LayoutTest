@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/linearLayout"
+        android:text="线性布局"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="buttonClick"/>
+
+    <Button
+        android:id="@+id/relativeLayout"
+        android:text="相对布局"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/linearLayout"
+        android:onClick="buttonClick"/>
+
+    <Button
+        android:id="@+id/tableLayout"
+        android:text="表格布局"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/relativeLayout"
+        android:onClick="buttonClick"/>
+
+</RelativeLayout>
